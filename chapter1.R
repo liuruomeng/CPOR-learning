@@ -19,9 +19,9 @@ g <- graph.data.frame(edgelist, directed=FALSE)
 lc <- cluster_louvain(g)
 membership(lc)
 
-#
+# 
 communities(lc)
 
-#
+#visualization
 plot(lc, g,vertex.color="green",vertex.label=NA,
      vertex.size=0.0001,edge.arrow.size=0.001)
